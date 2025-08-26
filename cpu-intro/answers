@@ -1,0 +1,15 @@
+1)The cpu usage should be 100% because the cpu is always running a process
+
+2)It should take 11 instruction cycles to complete both processes, as the first one is 4 instructions that never cause an I/O, while the second is 7.
+
+3)It should take 7 as the cpu will execute the 4:100 while waiting for the first one to complete its I/O.
+
+4)It goes back to taking 11 cycles as the cpu wont switch on I/O.
+
+5)It takes 7 cycles like before
+
+6)when an I/O is issued for the first process, it will not return to that process when the I/O completes, ressouces are not being effectively utilized, as we are wasting opportunities to run I/O and the cpu in parallel.
+
+7)Running a proccess that just completed an I/O again is good as if it might have to do an I/O again, so running it again improves cpu utilization
+
+8)The first process list take 15 cycles according to the trace, the second is 16 cycles, the third is 18 cycles
