@@ -1,0 +1,28 @@
+1)FIFO and SJF job 0 : tt = 200s, rt = 0s
+	job 1 : tt 400s, rt = 200s
+	job 2 : tt = 600s, rt = 400s
+
+2)
+FIFO
+job 0 : tt = 100s, rt = 0s
+job 1 : tt = 300s, rt = 100s
+job 2 : tt = 600s, rt = 300s
+
+SJF 
+job 0 : tt = 100s, rt = 0s
+job 1 : tt = 300s, rt = 100s
+job 2 : tt = 600s, rt = 300s
+
+3)
+RR
+job 0 : tt = 298s, rt = 0s
+job 1 : tt = 499s, rt = 1s
+job 2 : tt = 600s, rt = 2s
+
+4)In cases where the jobs that arrive on the system are ordered from shortest to longest
+
+5)SJF delivers the same response time as RR if the time slice of the RR only ever occurs the moment a job has finished, or is larger than the length of all the jobs combined
+
+6)The response time of the largest job becomes poor
+
+7)The response time becomes longer, the worst case response time for a time slice t and n jobs in RR is : t * (n -1) 
